@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Menu | Urban Bistro</title>
+  <meta name="description" content="Explore the Urban Bistro menu: starters, main course, burgers and sandwiches, desserts and beverages.">
+  <meta name="theme-color" content="#0b0a09">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body data-page="menu">
+<a href="#main" class="skip">Skip to content</a>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo" aria-label="Urban Bistro - home">
+      <img src="assets/images/logo.svg" alt="" width="44" height="44">
+      <span class="logo__text"><span class="logo__name">Urban <span>Bistro</span></span><span class="logo__tag">Fire &middot; Food &middot; Soul</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary"><ul><li><a href="index.html">Home</a></li><li><a href="menu.html" aria-current="page">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="chef.html">Chef</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <a href="contact.html" class="btn btn--primary btn--sm header__cta">Reserve a Table</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile" id="mobile-menu">
+  <nav aria-label="Mobile"><a class="mlink" href="index.html">Home<span aria-hidden="true" style="color:var(--brand-2);width:22px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="mlink" href="menu.html" aria-current="page">Menu<span aria-hidden="true" style="color:var(--brand-2);width:22px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="mlink" href="about.html">About<span aria-hidden="true" style="color:var(--brand-2);width:22px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="mlink" href="gallery.html">Gallery<span aria-hidden="true" style="color:var(--brand-2);width:22px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="mlink" href="chef.html">Chef<span aria-hidden="true" style="color:var(--brand-2);width:22px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="mlink" href="contact.html">Contact<span aria-hidden="true" style="color:var(--brand-2);width:22px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></nav>
+  <a href="contact.html" class="btn btn--primary">Reserve a Table <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <p class="mobile__meta">123 Placeholder Street, Your City<br>Mon&ndash;Thu 12:00&ndash;22:00 &middot; Fri&ndash;Sat 12:00&ndash;23:30 &middot; Sun 11:00&ndash;21:00</p>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero__bg" style="background-image:url('assets/images/photos/menu-hero.jpg')"></div>
+  <div class="container">
+    <span class="eyebrow">Our Menu</span>
+    <h1>Crafted With Fire, Served With Soul</h1>
+    <p class="sub">Seasonal, honest and bold. Browse our starters, mains, burgers, desserts and drinks.</p>
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Menu</span></nav>
+  </div>
+</section>
+
+<main id="main">
+  <div class="filters"><div class="container"><div class="filters__row" role="group" aria-label="Filter menu by category"><button class="chip" type="button" data-filter="all" aria-pressed="true">All</button><button class="chip" type="button" data-filter="starters" aria-pressed="false">Starters</button><button class="chip" type="button" data-filter="mains" aria-pressed="false">Main Course</button><button class="chip" type="button" data-filter="burgers" aria-pressed="false">Burgers &amp; Sandwiches</button><button class="chip" type="button" data-filter="desserts" aria-pressed="false">Desserts</button><button class="chip" type="button" data-filter="beverages" aria-pressed="false">Beverages</button></div></div></div>
+  <div class="section"><div class="container stack">
+<section id="starters" data-category="starters" class="menu-cat" aria-labelledby="starters-h"><div class="cat-head reveal"><h2 id="starters-h">Starters</h2><span></span></div><div class="grid grid--2"><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/cat-starters-fries.jpg" alt="Basket of golden fries" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Truffle Fries</h3><span class="dish__dots"></span><span class="p">$10</span></div><p>Hand-cut fries, truffle oil, parmesan, parsley and garlic aioli.</p></div></article><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/menu-garden-bowl.jpg" alt="Fresh garden salad bowl" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Garden Bowl</h3><span class="dish__dots"></span><span class="p">$12</span></div><p>Crisp greens, shaved radish, citrus vinaigrette and toasted seeds.</p></div></article><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/menu-tomato-soup.jpg" alt="Bowl of roasted tomato soup" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Roasted Tomato Soup</h3><span class="dish__dots"></span><span class="p">$9</span></div><p>Slow-roasted tomatoes, basil oil and a grilled cheese crouton.</p></div></article></div></section>
+<section id="mains" data-category="mains" class="menu-cat" aria-labelledby="mains-h"><div class="cat-head reveal"><h2 id="mains-h">Main Course</h2><span></span></div><div class="grid grid--2"><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/dish-ribeye.jpg" alt="Grilled ribeye steak" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Grilled Ribeye</h3><span class="dish__dots"></span><span class="p">$34</span></div><p>Dry-aged ribeye, smoked butter, charred greens and pepper jus.</p></div></article><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/menu-salmon.jpg" alt="Seared salmon fillet with vegetables" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Citrus Glazed Salmon</h3><span class="dish__dots"></span><span class="p">$26</span></div><p>Pan-seared salmon, orange glaze, fennel slaw and herb potatoes.</p></div></article><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/cat-main-pasta.jpg" alt="Plate of mushroom pasta" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Wild Mushroom Pasta</h3><span class="dish__dots"></span><span class="p">$22</span></div><p>Fresh tagliatelle, roasted mushrooms, thyme cream and pecorino.</p></div></article><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/dish-pizza.jpg" alt="Wood-fired BBQ chicken pizza" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>BBQ Chicken Pizza</h3><span class="dish__dots"></span><span class="p">$18</span></div><p>Wood-fired crust, smoky BBQ sauce, red onion and fresh cilantro.</p></div></article></div></section>
+<section id="burgers" data-category="burgers" class="menu-cat" aria-labelledby="burgers-h"><div class="cat-head reveal"><h2 id="burgers-h">Burgers &amp; Sandwiches</h2><span></span></div><div class="grid grid--2"><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/dish-burger.jpg" alt="Smash burger with cheese" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Urban Smash Burger</h3><span class="dish__dots"></span><span class="p">$16</span></div><p>Double smashed patty, aged cheddar, pickles and house sauce on a brioche bun.</p></div></article><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/menu-double-stack.jpg" alt="Stacked double cheeseburger" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Double Stack</h3><span class="dish__dots"></span><span class="p">$19</span></div><p>Two patties, bacon jam, crispy onions and sharp American cheese.</p></div></article><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/menu-chicken-sandwich.jpg" alt="Crispy chicken sandwich" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Crispy Chicken Sandwich</h3><span class="dish__dots"></span><span class="p">$15</span></div><p>Buttermilk fried chicken, spicy slaw and honey-chili mayo.</p></div></article></div></section>
+<section id="desserts" data-category="desserts" class="menu-cat" aria-labelledby="desserts-h"><div class="cat-head reveal"><h2 id="desserts-h">Desserts</h2><span></span></div><div class="grid grid--2"><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/dish-lava-cake.jpg" alt="Chocolate lava cake" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Molten Chocolate Cake</h3><span class="dish__dots"></span><span class="p">$10</span></div><p>Warm dark chocolate cake with a liquid center and vanilla cream.</p></div></article><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/cat-dessert-cheesecake.jpg" alt="Slice of berry cheesecake" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Berry Cheesecake</h3><span class="dish__dots"></span><span class="p">$9</span></div><p>Baked cheesecake, mixed berry compote and a buttery biscuit base.</p></div></article><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/menu-gelato.jpg" alt="Scoops of gelato" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Vanilla Bean Gelato</h3><span class="dish__dots"></span><span class="p">$8</span></div><p>Three scoops of house-churned gelato with salted caramel.</p></div></article></div></section>
+<section id="beverages" data-category="beverages" class="menu-cat" aria-labelledby="beverages-h"><div class="cat-head reveal"><h2 id="beverages-h">Beverages</h2><span></span></div><div class="grid grid--2"><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/cat-drinks-cocktail.jpg" alt="Cocktail on a dark bar" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Smoked Old Fashioned</h3><span class="dish__dots"></span><span class="p">$14</span></div><p>Bourbon, demerara, aromatic bitters and an orange peel, smoked to order.</p></div></article><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/menu-citrus-spritz.jpg" alt="Orange citrus cocktail" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Citrus Spritz</h3><span class="dish__dots"></span><span class="p">$11</span></div><p>Sparkling citrus, herbs and a splash of bitter orange.</p></div></article><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/menu-coffee.jpg" alt="Cup of black coffee" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Single-Origin Coffee</h3><span class="dish__dots"></span><span class="p">$5</span></div><p>Slow-brewed single-origin beans, served black or with milk.</p></div></article><article class="card dish reveal"><div class="card__media"><img src="assets/images/photos/menu-orange-cooler.jpg" alt="Chilled orange drink" loading="lazy" decoding="async"></div><div class="card__body"><div class="dish__top"><h3>Blood Orange Cooler</h3><span class="dish__dots"></span><span class="p">$7</span></div><p>Cold-pressed blood orange, mint and sparkling water.</p></div></article></div></section>
+    <p class="note">Sample dishes and prices are placeholders. Please tell your server about any allergies or dietary needs.</p>
+  </div></div>
+
+<section class="cta">
+  <div class="container reveal">
+    <h2>Hungry Yet?</h2>
+    <p>Reserve a table or ask us about private dining and group events.</p>
+    <div class="btn-row"><a href="contact.html" class="btn btn--primary">Get in Touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="gallery.html" class="btn btn--ghost">See the Gallery <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a href="index.html" class="logo" aria-label="Urban Bistro - home">
+        <img src="assets/images/logo.svg" alt="" width="48" height="48">
+        <span class="logo__text"><span class="logo__name">Urban <span>Bistro</span></span><span class="logo__tag">Fire &middot; Food &middot; Soul</span></span>
+      </a>
+      <p class="about">Bold flavors, honest ingredients and an after-dark atmosphere. Good food. Great vibes.</p>
+      <div class="socials"><a href="https://example.com/urbanbistro-instagram" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://example.com/urbanbistro-facebook" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://example.com/urbanbistro-x" target="_blank" rel="noopener noreferrer">X</a></div>
+    </div>
+    <nav aria-label="Footer"><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="chef.html">Chef</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div><h4>Visit Us</h4><address><p>Pimpri Chinchwad, Pune, Maharashtra, India</p><p style="margin-top:12px"><a href="tel:+918830532500">8830532500</a></p><p style="margin-top:12px"><a href="mailto:shelarjayshree635@gmail.com" style="word-break:break-all">shelarjayshree635@gmail.com</a></p></address></div>
+    <div><h4>Opening Hours</h4><div class="hours"><p><span>Mon &ndash; Thu</span><span>12:00 &ndash; 22:00</span></p><p><span>Fri &ndash; Sat</span><span>12:00 &ndash; 23:30</span></p><p><span>Sunday</span><span>11:00 &ndash; 21:00</span></p></div></div>
+  </div>
+  <div class="footer__bar"><div class="container"><p>&copy; <span data-year>2026</span> Urban Bistro. All rights reserved.</p><p>Pimpri Chinchwad, Pune · 8830532500</p></div></div>
+</footer>
+<button class="to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script src="js/main.js" defer></script>
+</body>
+</html>
